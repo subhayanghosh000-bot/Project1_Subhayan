@@ -1,0 +1,176 @@
+/* General Resets and Global Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Using a common likely candidate */
+    color: #fff; /* Default text color is white */
+    background-color: #f0f0f0; /* Light grey background outside the main content */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Link a Google Font (Add this to your HTML <head> or import here) */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap'); */
+
+/* --- Main Container Styling --- */
+.main-container {
+    width: 100%;
+    max-width: 1200px; /* Constraints for a desktop view */
+    background-color: #20232a; /* The dark background color from the image */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 8px; /* Slight rounding for the whole container */
+    padding-bottom: 50px; /* Space at the bottom */
+}
+
+/* --- Header/Navbar Styling --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.logo-highlight {
+    color: #4A90E2; /* Blue highlight for the 'GEC Community' part of the logo */
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin-right: 25px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #b0b0b0; /* Lighter grey for inactive links */
+    font-size: 16px;
+    padding: 5px 0;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navbar nav ul li a:hover,
+.navbar nav ul li a.active {
+    color: #fff;
+    border-bottom: 2px solid #4A90E2; /* Blue line for active link */
+}
+
+/* Join Us Button in Navbar */
+.btn-join {
+    background-color: #4A90E2;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.btn-join:hover {
+    background-color: #357ABD;
+}
+
+/* --- Hero Section Styling --- */
+.hero-section {
+    text-align: center;
+    padding: 100px 40px 150px 40px; /* Large vertical padding */
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 900; /* Extra bold/black for impact */
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.highlight-text {
+    color: #4A90E2; /* Blue color for 'TOMORROWS' */
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #b0b0b0;
+    margin-bottom: 30px;
+}
+
+/* Start Learning Button */
+.btn-start {
+    display: inline-block;
+    background-color: #4A90E2;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.btn-start:hover {
+    background-color: #357ABD;
+}
+
+/* --- What We Offer Section Styling --- */
+.offer-section {
+    padding: 0 40px;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #b0b0b0; /* Lighter grey for the title */
+    margin-bottom: 20px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.offer-cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Space between cards */
+}
+
+.offer-card {
+    flex: 1; /* Each card takes equal space */
+    background-color: #282c34; /* Slightly lighter dark background for the cards */
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    border-top: 3px solid transparent; /* Prepare for hover/active effect */
+    transition: background-color 0.3s, border-top-color 0.3s;
+    min-height: 180px; /* Ensure cards have a consistent height */
+}
+
+.offer-card:hover {
+    background-color: #343943;
+    border-top-color: #4A90E2; /* Blue border on hover */
+}
+
+.offer-card .icon {
+    font-size: 40px;
+    color: #4A90E2;
+    margin-bottom: 15px;
+}
+
+.offer-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.offer-card p {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin: 0;
+}
